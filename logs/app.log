@@ -1,0 +1,290 @@
+2025-02-25 21:37:20 [main] INFO  AiAgentApplication - Starting AiAgentApplication using Java 22.0.1 with PID 97032 (C:\Users\fares\OneDrive\Bureau\spring boot\AIAgent\target\classes started by fares in C:\Users\fares\OneDrive\Bureau\spring boot\AIAgent)
+2025-02-25 21:37:20 [main] INFO  AiAgentApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-25 21:37:22 [main] INFO  TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025-02-25 21:37:22 [main] INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2025-02-25 21:37:22 [main] INFO  StandardService - Starting service [Tomcat]
+2025-02-25 21:37:22 [main] INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25 21:37:22 [main] INFO  [/] - Initializing Spring embedded WebApplicationContext
+2025-02-25 21:37:22 [main] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2209 ms
+2025-02-25 21:37:22 [main] DEBUG RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+2025-02-25 21:37:22 [main] DEBUG SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-25 21:37:22 [main] DEBUG RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-25 21:37:23 [main] DEBUG ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-25 21:37:23 [main] INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2025-02-25 21:37:23 [main] INFO  TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025-02-25 21:37:23 [main] INFO  AiAgentApplication - Started AiAgentApplication in 4.373 seconds (process running for 5.782)
+2025-02-25 21:37:58 [http-nio-9090-exec-1] INFO  [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25 21:37:58 [http-nio-9090-exec-1] INFO  DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-25 21:37:58 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected StandardServletMultipartResolver
+2025-02-25 21:37:58 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-02-25 21:37:58 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected FixedThemeResolver
+2025-02-25 21:37:58 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@33c5171d
+2025-02-25 21:37:58 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@59fd742
+2025-02-25 21:37:58 [http-nio-9090-exec-1] DEBUG DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-25 21:37:58 [http-nio-9090-exec-1] INFO  DispatcherServlet - Completed initialization in 5 ms
+2025-02-25 21:37:58 [http-nio-9090-exec-1] DEBUG DispatcherServlet - GET "/test", parameters={}
+2025-02-25 21:37:58 [http-nio-9090-exec-1] DEBUG RequestMappingHandlerMapping - Mapped to vermeg.springAI.AIAgent.controller.LoggingController#testLogging()
+2025-02-25 21:37:58 [http-nio-9090-exec-1] INFO  LoggingController - Info: This is a test log message.
+2025-02-25 21:37:58 [http-nio-9090-exec-1] ERROR LoggingController - Error: This is an error log message.
+2025-02-25 21:37:58 [http-nio-9090-exec-1] DEBUG RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-02-25 21:37:58 [http-nio-9090-exec-1] DEBUG RequestResponseBodyMethodProcessor - Writing ["Check logs for output!"]
+2025-02-25 21:37:58 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 21:43:34 [http-nio-9090-exec-5] DEBUG DispatcherServlet - GET "/test/t", parameters={}
+2025-02-25 21:43:34 [http-nio-9090-exec-5] DEBUG SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-25 21:43:34 [http-nio-9090-exec-5] DEBUG ResourceHttpRequestHandler - Resource not found
+2025-02-25 21:43:34 [http-nio-9090-exec-5] DEBUG DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource test/t.]
+2025-02-25 21:43:34 [http-nio-9090-exec-5] DEBUG DispatcherServlet - Completed 404 NOT_FOUND
+2025-02-25 21:43:34 [http-nio-9090-exec-5] DEBUG DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-02-25 21:43:34 [http-nio-9090-exec-5] DEBUG RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-02-25 21:43:34 [http-nio-9090-exec-5] DEBUG HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-02-25 21:43:34 [http-nio-9090-exec-5] DEBUG HttpEntityMethodProcessor - Writing [{timestamp=Tue Feb 25 21:43:34 WAT 2025, status=404, error=Not Found, path=/test/t}]
+2025-02-25 21:43:34 [http-nio-9090-exec-5] DEBUG DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-02-25 21:47:07 [SpringApplicationShutdownHook] INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-25 21:47:07 [tomcat-shutdown] INFO  GracefulShutdown - Graceful shutdown complete
+2025-02-25 21:47:14 [main] INFO  AiAgentApplication - Starting AiAgentApplication using Java 22.0.1 with PID 109504 (C:\Users\fares\OneDrive\Bureau\spring boot\AIAgent\target\classes started by fares in C:\Users\fares\OneDrive\Bureau\spring boot\AIAgent)
+2025-02-25 21:47:14 [main] INFO  AiAgentApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-25 21:47:16 [main] INFO  TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025-02-25 21:47:16 [main] INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2025-02-25 21:47:16 [main] INFO  StandardService - Starting service [Tomcat]
+2025-02-25 21:47:16 [main] INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25 21:47:16 [main] INFO  [/] - Initializing Spring embedded WebApplicationContext
+2025-02-25 21:47:16 [main] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1723 ms
+2025-02-25 21:47:16 [main] DEBUG RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+2025-02-25 21:47:16 [main] DEBUG SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-25 21:47:16 [main] DEBUG RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-25 21:47:16 [main] DEBUG ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-25 21:47:17 [main] INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2025-02-25 21:47:17 [main] INFO  TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025-02-25 21:47:17 [main] INFO  AiAgentApplication - Started AiAgentApplication in 3.695 seconds (process running for 5.14)
+2025-02-25 21:47:43 [http-nio-9090-exec-1] INFO  [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25 21:47:43 [http-nio-9090-exec-1] INFO  DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-25 21:47:43 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected StandardServletMultipartResolver
+2025-02-25 21:47:43 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-02-25 21:47:43 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected FixedThemeResolver
+2025-02-25 21:47:43 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@18c1b3b2
+2025-02-25 21:47:43 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5933089c
+2025-02-25 21:47:43 [http-nio-9090-exec-1] DEBUG DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-25 21:47:43 [http-nio-9090-exec-1] INFO  DispatcherServlet - Completed initialization in 2 ms
+2025-02-25 21:47:43 [http-nio-9090-exec-1] DEBUG DispatcherServlet - GET "/test", parameters={}
+2025-02-25 21:47:43 [http-nio-9090-exec-1] DEBUG RequestMappingHandlerMapping - Mapped to vermeg.springAI.AIAgent.controller.LoggingController#testLogging()
+2025-02-25 21:47:43 [http-nio-9090-exec-1] DEBUG RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-02-25 21:47:43 [http-nio-9090-exec-1] DEBUG RequestResponseBodyMethodProcessor - Writing ["Check logs for output!"]
+2025-02-25 21:47:43 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 21:49:21 [SpringApplicationShutdownHook] INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-25 21:49:21 [tomcat-shutdown] INFO  GracefulShutdown - Graceful shutdown complete
+2025-02-25 21:49:27 [main] INFO  AiAgentApplication - Starting AiAgentApplication using Java 22.0.1 with PID 105924 (C:\Users\fares\OneDrive\Bureau\spring boot\AIAgent\target\classes started by fares in C:\Users\fares\OneDrive\Bureau\spring boot\AIAgent)
+2025-02-25 21:49:27 [main] INFO  AiAgentApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-25 21:49:29 [main] INFO  TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025-02-25 21:49:29 [main] INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2025-02-25 21:49:29 [main] INFO  StandardService - Starting service [Tomcat]
+2025-02-25 21:49:29 [main] INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25 21:49:29 [main] INFO  [/] - Initializing Spring embedded WebApplicationContext
+2025-02-25 21:49:29 [main] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1728 ms
+2025-02-25 21:49:29 [main] DEBUG RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+2025-02-25 21:49:30 [main] DEBUG SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-25 21:49:30 [main] DEBUG RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-25 21:49:30 [main] DEBUG ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-25 21:49:30 [main] INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2025-02-25 21:49:30 [main] INFO  TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025-02-25 21:49:30 [main] INFO  AiAgentApplication - Started AiAgentApplication in 3.603 seconds (process running for 4.986)
+2025-02-25 21:49:43 [http-nio-9090-exec-6] INFO  [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25 21:49:43 [http-nio-9090-exec-6] INFO  DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-25 21:49:43 [http-nio-9090-exec-6] DEBUG DispatcherServlet - Detected StandardServletMultipartResolver
+2025-02-25 21:49:43 [http-nio-9090-exec-6] DEBUG DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-02-25 21:49:43 [http-nio-9090-exec-6] DEBUG DispatcherServlet - Detected FixedThemeResolver
+2025-02-25 21:49:43 [http-nio-9090-exec-6] DEBUG DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@29710687
+2025-02-25 21:49:43 [http-nio-9090-exec-6] DEBUG DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@193238a2
+2025-02-25 21:49:43 [http-nio-9090-exec-6] DEBUG DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-25 21:49:43 [http-nio-9090-exec-6] INFO  DispatcherServlet - Completed initialization in 3 ms
+2025-02-25 21:49:43 [http-nio-9090-exec-6] DEBUG DispatcherServlet - GET "/test", parameters={}
+2025-02-25 21:49:43 [http-nio-9090-exec-6] DEBUG RequestMappingHandlerMapping - Mapped to vermeg.springAI.AIAgent.controller.LoggingController#testLogging()
+2025-02-25 21:49:43 [http-nio-9090-exec-6] INFO  LoggingController - Info: This is a test log message.
+2025-02-25 21:49:43 [http-nio-9090-exec-6] ERROR LoggingController - Error: This is an error log message.
+2025-02-25 21:49:43 [http-nio-9090-exec-6] DEBUG RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-02-25 21:49:43 [http-nio-9090-exec-6] DEBUG RequestResponseBodyMethodProcessor - Writing ["Check logs for output!"]
+2025-02-25 21:49:43 [http-nio-9090-exec-6] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 21:50:29 [SpringApplicationShutdownHook] INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-25 21:50:29 [tomcat-shutdown] INFO  GracefulShutdown - Graceful shutdown complete
+2025-02-25 21:50:34 [main] INFO  AiAgentApplication - Starting AiAgentApplication using Java 22.0.1 with PID 103060 (C:\Users\fares\OneDrive\Bureau\spring boot\AIAgent\target\classes started by fares in C:\Users\fares\OneDrive\Bureau\spring boot\AIAgent)
+2025-02-25 21:50:34 [main] INFO  AiAgentApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-25 21:50:35 [main] INFO  TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025-02-25 21:50:35 [main] INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2025-02-25 21:50:35 [main] INFO  StandardService - Starting service [Tomcat]
+2025-02-25 21:50:35 [main] INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25 21:50:35 [main] INFO  [/] - Initializing Spring embedded WebApplicationContext
+2025-02-25 21:50:35 [main] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1590 ms
+2025-02-25 21:50:36 [main] DEBUG RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+2025-02-25 21:50:36 [main] DEBUG SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-25 21:50:36 [main] DEBUG RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-25 21:50:36 [main] DEBUG ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-25 21:50:36 [main] INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2025-02-25 21:50:36 [main] INFO  TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025-02-25 21:50:36 [main] INFO  AiAgentApplication - Started AiAgentApplication in 3.392 seconds (process running for 4.504)
+2025-02-25 21:50:41 [http-nio-9090-exec-1] INFO  [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25 21:50:41 [http-nio-9090-exec-1] INFO  DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-25 21:50:41 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected StandardServletMultipartResolver
+2025-02-25 21:50:41 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-02-25 21:50:41 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected FixedThemeResolver
+2025-02-25 21:50:41 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5b7cd031
+2025-02-25 21:50:41 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@20fa5c99
+2025-02-25 21:50:41 [http-nio-9090-exec-1] DEBUG DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-25 21:50:41 [http-nio-9090-exec-1] INFO  DispatcherServlet - Completed initialization in 3 ms
+2025-02-25 21:50:41 [http-nio-9090-exec-1] DEBUG DispatcherServlet - GET "/test", parameters={}
+2025-02-25 21:50:41 [http-nio-9090-exec-1] DEBUG RequestMappingHandlerMapping - Mapped to vermeg.springAI.AIAgent.controller.LoggingController#testLogging()
+2025-02-25 21:50:41 [http-nio-9090-exec-1] INFO  LoggingController - hadil
+2025-02-25 21:50:41 [http-nio-9090-exec-1] ERROR LoggingController - Error: This is an error log message.
+2025-02-25 21:50:41 [http-nio-9090-exec-1] DEBUG RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-02-25 21:50:41 [http-nio-9090-exec-1] DEBUG RequestResponseBodyMethodProcessor - Writing ["Check logs for output!"]
+2025-02-25 21:50:41 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 21:54:56 [SpringApplicationShutdownHook] INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-25 21:54:56 [tomcat-shutdown] INFO  GracefulShutdown - Graceful shutdown complete
+2025-02-25 21:55:04 [main] INFO  AiAgentApplication - Starting AiAgentApplication using Java 22.0.1 with PID 80132 (C:\Users\fares\OneDrive\Bureau\spring boot\AIAgent\target\classes started by fares in C:\Users\fares\OneDrive\Bureau\spring boot\AIAgent)
+2025-02-25 21:55:04 [main] INFO  AiAgentApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-25 21:55:05 [main] INFO  TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025-02-25 21:55:05 [main] INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2025-02-25 21:55:05 [main] INFO  StandardService - Starting service [Tomcat]
+2025-02-25 21:55:05 [main] INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25 21:55:05 [main] INFO  [/] - Initializing Spring embedded WebApplicationContext
+2025-02-25 21:55:05 [main] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1548 ms
+2025-02-25 21:55:06 [main] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-25 21:55:06 [main] DEBUG RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2025-02-25 21:55:06 [main] DEBUG SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-25 21:55:06 [main] DEBUG RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-25 21:55:06 [main] DEBUG ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-25 21:55:06 [main] INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2025-02-25 21:55:06 [main] INFO  TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025-02-25 21:55:06 [main] INFO  AiAgentApplication - Started AiAgentApplication in 3.523 seconds (process running for 4.649)
+2025-02-25 21:55:31 [http-nio-9090-exec-1] INFO  [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25 21:55:31 [http-nio-9090-exec-1] INFO  DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-25 21:55:31 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected StandardServletMultipartResolver
+2025-02-25 21:55:31 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-02-25 21:55:31 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected FixedThemeResolver
+2025-02-25 21:55:31 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7d658d14
+2025-02-25 21:55:31 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@38ae8acc
+2025-02-25 21:55:31 [http-nio-9090-exec-1] DEBUG DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-25 21:55:31 [http-nio-9090-exec-1] INFO  DispatcherServlet - Completed initialization in 3 ms
+2025-02-25 21:55:31 [http-nio-9090-exec-1] DEBUG DispatcherServlet - GET "/swagger-ui.html", parameters={}
+2025-02-25 21:55:31 [http-nio-9090-exec-1] DEBUG RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc#redirectToUi(HttpServletRequest)
+2025-02-25 21:55:32 [http-nio-9090-exec-1] DEBUG HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json, application/yaml]
+2025-02-25 21:55:32 [http-nio-9090-exec-1] DEBUG HttpEntityMethodProcessor - Nothing to write: null body
+2025-02-25 21:55:32 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Completed 302 FOUND
+2025-02-25 21:55:32 [http-nio-9090-exec-2] DEBUG DispatcherServlet - GET "/swagger-ui/index.html", parameters={}
+2025-02-25 21:55:32 [http-nio-9090-exec-2] DEBUG SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-25 21:55:32 [http-nio-9090-exec-2] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 21:55:32 [http-nio-9090-exec-3] DEBUG DispatcherServlet - GET "/swagger-ui/swagger-ui.css", parameters={}
+2025-02-25 21:55:32 [http-nio-9090-exec-3] DEBUG SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-25 21:55:32 [http-nio-9090-exec-6] DEBUG DispatcherServlet - GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2025-02-25 21:55:32 [http-nio-9090-exec-5] DEBUG DispatcherServlet - GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2025-02-25 21:55:32 [http-nio-9090-exec-6] DEBUG SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-25 21:55:32 [http-nio-9090-exec-7] DEBUG DispatcherServlet - GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-02-25 21:55:32 [http-nio-9090-exec-5] DEBUG SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-25 21:55:32 [http-nio-9090-exec-4] DEBUG DispatcherServlet - GET "/swagger-ui/index.css", parameters={}
+2025-02-25 21:55:32 [http-nio-9090-exec-4] DEBUG SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-25 21:55:32 [http-nio-9090-exec-7] DEBUG SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-25 21:55:32 [http-nio-9090-exec-4] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 21:55:32 [http-nio-9090-exec-3] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 21:55:32 [http-nio-9090-exec-6] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 21:55:32 [http-nio-9090-exec-5] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 21:55:32 [http-nio-9090-exec-7] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 21:55:32 [http-nio-9090-exec-8] DEBUG DispatcherServlet - GET "/api-docs/swagger-config", parameters={}
+2025-02-25 21:55:32 [http-nio-9090-exec-9] DEBUG DispatcherServlet - GET "/swagger-ui/favicon-32x32.png", parameters={}
+2025-02-25 21:55:32 [http-nio-9090-exec-8] DEBUG RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-02-25 21:55:32 [http-nio-9090-exec-9] DEBUG SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-25 21:55:32 [http-nio-9090-exec-8] DEBUG RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+2025-02-25 21:55:32 [http-nio-9090-exec-9] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 21:55:32 [http-nio-9090-exec-8] DEBUG RequestResponseBodyMethodProcessor - Writing [{configUrl=/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:9090/swagger-ui/oauth2-redir (truncated)...]
+2025-02-25 21:55:32 [http-nio-9090-exec-8] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 21:55:32 [http-nio-9090-exec-10] DEBUG DispatcherServlet - GET "/api-docs", parameters={}
+2025-02-25 21:55:32 [http-nio-9090-exec-10] DEBUG RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-02-25 21:55:32 [http-nio-9090-exec-10] INFO  AbstractOpenApiResource - Init duration for springdoc-openapi is: 265 ms
+2025-02-25 21:55:32 [http-nio-9090-exec-10] DEBUG RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-02-25 21:55:32 [http-nio-9090-exec-10] DEBUG RequestResponseBodyMethodProcessor - Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-02-25 21:55:32 [http-nio-9090-exec-10] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 21:56:12 [http-nio-9090-exec-1] DEBUG DispatcherServlet - GET "/test", parameters={}
+2025-02-25 21:56:12 [http-nio-9090-exec-1] DEBUG RequestMappingHandlerMapping - Mapped to vermeg.springAI.AIAgent.controller.LoggingController#testLogging()
+2025-02-25 21:56:12 [http-nio-9090-exec-1] INFO  LoggingController - Info: This is a test log message.
+2025-02-25 21:56:12 [http-nio-9090-exec-1] ERROR LoggingController - Error: This is an error log message.
+2025-02-25 21:56:12 [http-nio-9090-exec-1] DEBUG RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/yaml]
+2025-02-25 21:56:12 [http-nio-9090-exec-1] DEBUG RequestResponseBodyMethodProcessor - Writing ["Check logs for output!"]
+2025-02-25 21:56:12 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 21:57:15 [http-nio-9090-exec-7] DEBUG DispatcherServlet - GET "/swagger-ui/api-docs", parameters={}
+2025-02-25 21:57:15 [http-nio-9090-exec-7] DEBUG SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-25 21:57:15 [http-nio-9090-exec-7] DEBUG ResourceHttpRequestHandler - Resource not found
+2025-02-25 21:57:15 [http-nio-9090-exec-7] DEBUG DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/api-docs.]
+2025-02-25 21:57:15 [http-nio-9090-exec-7] DEBUG DispatcherServlet - Completed 404 NOT_FOUND
+2025-02-25 21:57:15 [http-nio-9090-exec-7] DEBUG DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-02-25 21:57:15 [http-nio-9090-exec-7] DEBUG RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2025-02-25 21:57:15 [http-nio-9090-exec-7] DEBUG ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+2025-02-25 21:57:15 [http-nio-9090-exec-7] DEBUG DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-02-25 21:57:15 [http-nio-9090-exec-9] DEBUG DispatcherServlet - GET "/favicon.ico", parameters={}
+2025-02-25 21:57:15 [http-nio-9090-exec-9] DEBUG SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-25 21:57:15 [http-nio-9090-exec-9] DEBUG ResourceHttpRequestHandler - Resource not found
+2025-02-25 21:57:15 [http-nio-9090-exec-9] DEBUG DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-02-25 21:57:15 [http-nio-9090-exec-9] DEBUG DispatcherServlet - Completed 404 NOT_FOUND
+2025-02-25 21:57:15 [http-nio-9090-exec-9] DEBUG DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-02-25 21:57:15 [http-nio-9090-exec-9] DEBUG RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-02-25 21:57:15 [http-nio-9090-exec-9] DEBUG HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2025-02-25 21:57:15 [http-nio-9090-exec-9] DEBUG HttpEntityMethodProcessor - Writing [{timestamp=Tue Feb 25 21:57:15 WAT 2025, status=404, error=Not Found, path=/favicon.ico}]
+2025-02-25 21:57:15 [http-nio-9090-exec-9] DEBUG DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-02-25 22:01:06 [SpringApplicationShutdownHook] INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-25 22:01:06 [tomcat-shutdown] INFO  GracefulShutdown - Graceful shutdown complete
+2025-02-25 22:01:14 [main] INFO  AiAgentApplication - Starting AiAgentApplication using Java 22.0.1 with PID 96380 (C:\Users\fares\OneDrive\Bureau\spring boot\AIAgent\target\classes started by fares in C:\Users\fares\OneDrive\Bureau\spring boot\AIAgent)
+2025-02-25 22:01:14 [main] INFO  AiAgentApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-25 22:01:17 [main] INFO  TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025-02-25 22:01:17 [main] INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2025-02-25 22:01:17 [main] INFO  StandardService - Starting service [Tomcat]
+2025-02-25 22:01:17 [main] INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25 22:01:17 [main] INFO  [/] - Initializing Spring embedded WebApplicationContext
+2025-02-25 22:01:17 [main] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2674 ms
+2025-02-25 22:01:17 [main] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-25 22:01:18 [main] DEBUG RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2025-02-25 22:01:18 [main] DEBUG SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-25 22:01:18 [main] DEBUG RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-25 22:01:18 [main] DEBUG ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-25 22:01:18 [main] INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2025-02-25 22:01:18 [main] INFO  TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025-02-25 22:01:18 [main] INFO  AiAgentApplication - Started AiAgentApplication in 5.306 seconds (process running for 7.243)
+2025-02-25 22:01:30 [http-nio-9090-exec-1] INFO  [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25 22:01:30 [http-nio-9090-exec-1] INFO  DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-25 22:01:30 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected StandardServletMultipartResolver
+2025-02-25 22:01:30 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-02-25 22:01:30 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected FixedThemeResolver
+2025-02-25 22:01:30 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3e3d3ad5
+2025-02-25 22:01:30 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@460ba357
+2025-02-25 22:01:30 [http-nio-9090-exec-1] DEBUG DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-25 22:01:30 [http-nio-9090-exec-1] INFO  DispatcherServlet - Completed initialization in 3 ms
+2025-02-25 22:01:30 [http-nio-9090-exec-1] DEBUG DispatcherServlet - GET "/swagger-ui/index.html", parameters={}
+2025-02-25 22:01:30 [http-nio-9090-exec-1] DEBUG SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-25 22:01:30 [http-nio-9090-exec-1] DEBUG DispatcherServlet - Completed 304 NOT_MODIFIED
+2025-02-25 22:01:30 [http-nio-9090-exec-2] DEBUG DispatcherServlet - GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-02-25 22:01:30 [http-nio-9090-exec-2] DEBUG SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-02-25 22:01:30 [http-nio-9090-exec-2] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 22:01:30 [http-nio-9090-exec-3] DEBUG DispatcherServlet - GET "/api-docs/swagger-config", parameters={}
+2025-02-25 22:01:30 [http-nio-9090-exec-3] DEBUG RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-02-25 22:01:30 [http-nio-9090-exec-3] DEBUG RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+2025-02-25 22:01:30 [http-nio-9090-exec-3] DEBUG RequestResponseBodyMethodProcessor - Writing [{configUrl=/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:9090/swagger-ui/oauth2-redir (truncated)...]
+2025-02-25 22:01:30 [http-nio-9090-exec-3] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 22:01:30 [http-nio-9090-exec-4] DEBUG DispatcherServlet - GET "/api-docs", parameters={}
+2025-02-25 22:01:30 [http-nio-9090-exec-4] DEBUG RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-02-25 22:01:31 [http-nio-9090-exec-4] INFO  AbstractOpenApiResource - Init duration for springdoc-openapi is: 288 ms
+2025-02-25 22:01:31 [http-nio-9090-exec-4] DEBUG RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-02-25 22:01:31 [http-nio-9090-exec-4] DEBUG RequestResponseBodyMethodProcessor - Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-02-25 22:01:31 [http-nio-9090-exec-4] DEBUG DispatcherServlet - Completed 200 OK
+2025-02-25 22:04:43 [SpringApplicationShutdownHook] INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-25 22:04:43 [tomcat-shutdown] INFO  GracefulShutdown - Graceful shutdown complete
+2025-02-25 22:04:50 [main] INFO  AiAgentApplication - Starting AiAgentApplication using Java 22.0.1 with PID 105168 (C:\Users\fares\OneDrive\Bureau\spring boot\AIAgent\target\classes started by fares in C:\Users\fares\OneDrive\Bureau\spring boot\AIAgent)
+2025-02-25 22:04:50 [main] INFO  AiAgentApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-25 22:04:52 [main] INFO  TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025-02-25 22:04:52 [main] INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2025-02-25 22:04:52 [main] INFO  StandardService - Starting service [Tomcat]
+2025-02-25 22:04:52 [main] INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25 22:04:52 [main] INFO  [/] - Initializing Spring embedded WebApplicationContext
+2025-02-25 22:04:52 [main] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2184 ms
+2025-02-25 22:04:53 [main] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-25 22:04:53 [main] DEBUG RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2025-02-25 22:04:53 [main] DEBUG SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-25 22:04:53 [main] DEBUG RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-25 22:04:53 [main] DEBUG ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-25 22:04:54 [main] INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2025-02-25 22:04:54 [main] INFO  TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025-02-25 22:04:54 [main] INFO  AiAgentApplication - Started AiAgentApplication in 4.796 seconds (process running for 6.458)
