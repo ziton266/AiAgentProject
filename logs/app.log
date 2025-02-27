@@ -288,3 +288,5 @@
 2025-02-25 22:04:54 [main] INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
 2025-02-25 22:04:54 [main] INFO  TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
 2025-02-25 22:04:54 [main] INFO  AiAgentApplication - Started AiAgentApplication in 4.796 seconds (process running for 6.458)
+2025-02-25 22:12:05 [SpringApplicationShutdownHook] INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-25 22:12:06 [tomcat-shutdown] INFO  GracefulShutdown - Graceful shutdown complete
