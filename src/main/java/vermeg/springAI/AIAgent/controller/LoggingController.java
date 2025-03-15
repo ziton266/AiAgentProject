@@ -16,7 +16,7 @@ public class LoggingController {
         logger.info("Info: This is a test log message.");
         logger.debug("Debug: This is a debug log message.");
         logger.error("Error: This is an error log message.");
-        return "Check logs for output!";
+        return "helllo world!";
     }
 
 
